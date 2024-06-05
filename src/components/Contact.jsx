@@ -1,8 +1,34 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "emailjs-com";
 import { IoMdCall } from "react-icons/io";
 import { IoMail, IoLocation } from "react-icons/io5";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_0mju349",
+        "template_110kudt",
+        form.current,
+        "w7IDVwnqeyLoNKyQI"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message sent successfully!");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Failed to send the message. Please try again later.");
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <section
       id="contact"
@@ -13,7 +39,7 @@ const Contact = () => {
           <h2 className="text-4xl sm:text-5xl w-full font-bold mb-8 text-center font-handwriting">
             Contact Us
           </h2>
-          <form className="space-y-4">
+          <form ref={form} onSubmit={sendEmail} className="space-y-4">
             <div>
               <label className="block text-sm font-bold mb-2" htmlFor="name">
                 Name
