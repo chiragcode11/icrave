@@ -49,7 +49,7 @@ const Testimonials = () => {
                   alt={testimonial.name}
                   className="w-28 h-28 rounded-full object-cover mb-4 sm:mb-0 sm:mr-4"
                 />
-                <div className="w-full sm:w-4/5">
+                <div className="w-full text-center md:text-justify sm:w-4/5">
                   <h3 className="text-xl sm:text-2xl font-semibold">
                     {testimonial.name}
                   </h3>
