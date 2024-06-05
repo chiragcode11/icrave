@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <section
         id="home"
-        className="relative w-full h-screen flex items-center justify-center -z-10"
+        className="relative w-full h-screen flex items-center justify-center z-20"
       >
         <div className="absolute inset-0 bg-[rgba(0,0,0,0.7)] flex items-center justify-center">
           <div className="container flex flex-col items-center gap-4 md:gap-6 lg:gap-10 mx-auto text-center text-textPrimary px-4">
