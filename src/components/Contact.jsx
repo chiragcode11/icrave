@@ -23,7 +23,7 @@ const Contact = () => {
         },
         (error) => {
           console.log(error.text);
-          alert("Failed to send the message. Please try again later.");
+          alert("Failed to send the message. Please try again later. Thanks");
         }
       );
     e.target.reset();
