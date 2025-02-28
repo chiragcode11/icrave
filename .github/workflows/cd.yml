@@ -18,4 +18,4 @@ jobs:
     - name: Delete Old docker container
       run: sudo docker rm -f my-react-app-container || true
     - name: Run Docker Container
-      run: sudo docker run -d -p 8080:8080 --name my-react-app-container madeye11/my-react-app
+      run: sudo docker run -d -p 3000:3000 --name my-react-app-container madeye11/my-react-app
