@@ -22,7 +22,7 @@ const testimonials = [
     name: "Sam Wilson",
     title: "Manager, Retail Store",
     message:
-      "Our store's new layout has significantly improved customer flow and sales. The attention to detail and professional service were outstanding.",
+      "Our store's new layout has significantly improved customer flow and sales. The attention to detail and professional service were outstanding. Great Experience with the team",
     image: three,
   },
 ];
